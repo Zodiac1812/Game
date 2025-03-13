@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen">
+            <h1>Reaction Game</h1>
+            <p>Bet some virtual points and react as fast as you can!</p>
+            <label for="points">Enter points to bet:</label>
+            <input type="number" id="points" min="1" max="100" value="10">
+            <button id="start-btn">Start Game</button>
+        </div>
+
+        <div id="game-screen" style="display: none;">
+            <h2>React Fast!</h2>
+            <div id="reaction-box" class="box">Wait for it...</div>
+        </div>
+
+        <div id="result-screen" style="display: none;">
+            <h2>Results</h2>
+            <p>Your reaction time was: <span id="reaction-time">0</span> milliseconds</p>
+            <p id="result-message"></p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
